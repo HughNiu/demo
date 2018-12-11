@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+</head>
+<body>
+Hi
+<script>
+    $.ajax({
+        url:"/test",
+        type:"PUT",
+        data:[{id:1, name:"one"},{id:2, name:"two"}],
+        success: function () {
+            console.log("成功了~")
+        }
+    });
+</script>
+</body>
+</html>
